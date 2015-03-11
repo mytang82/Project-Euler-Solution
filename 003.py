@@ -37,4 +37,3 @@ print LargestPrimeFactor(90)
 # 5
 print LargestPrimeFactor(600851475143)
 # 6857
-
