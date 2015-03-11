@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Problem 4
 # ---------
 '''
@@ -43,6 +44,8 @@ def largestPalindrome(n):
             result.append(num)
     return max(result)
 
+# Test cases
+# ----------
 print prodTwo(5)
 # [1, 2, 3, 4, 5, 4, 6, 8, 10, 9, 12, 15, 16, 20, 25]
 print palindrome(54)

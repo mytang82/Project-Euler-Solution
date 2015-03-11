@@ -12,6 +12,8 @@ def sum3or5(n):
             numList.append(num)
     return sum(numList)
 
+# Test cases
+# ----------
 print sum3or5(10)
 # 23
 print sum3or5(1000)

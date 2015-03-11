@@ -3,13 +3,12 @@
 '''
 The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
-'''
-'''
+
 The following solution assumes
     (LargestPrimeFactor of n) < sqrt(n)
 This is not always true, for example n=6, 15, or 1194
-My fixes is to continuously divide n through all prime < sqrt(n)
-Then compare it with the max of all prime < sqrt(n)
+My fixes are to continuously divide n through all prime < sqrt(n)
+Then compare the remaining value with the max of all prime < sqrt(n)
 '''
 import math
 def prime(n, primeDict = {}):
@@ -52,6 +51,7 @@ def LargestPrimeFactor(n):
     return max(primeDict)
 
 # Test cases
+# ----------
 print prime(2)
 # True
 print prime(3)

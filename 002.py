@@ -25,5 +25,7 @@ def fibSeqEvenValueSum(maxValue):
             result = result + fibList[i]
     return result
 
+# Test cases
+# ----------
 print fibSeqEvenValueSum(4e6)
 # 4613732

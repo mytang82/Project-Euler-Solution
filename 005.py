@@ -38,13 +38,27 @@ def smallestMultiple(n):
             else:
                 factorDict[primeNum] = max(factorDict[primeNum],tempDict[primeNum])
     result = 1
-    print factorDict
     for j in factorDict.keys():
         result = result * (j**factorDict[j])
     return result
 
-# Testing
+# Test cases
+# ----------
 for i in range(1,11):
-    print primeFactor(i, {})
+    print 'i =', i, primeFactor(i, {})
+'''
+i = 1 {}
+i = 2 {2: 1}
+i = 3 {3: 1}
+i = 4 {2: 2}
+i = 5 {5: 1}
+i = 6 {2: 1, 3: 1}
+i = 7 {7: 1}
+i = 8 {2: 3}
+i = 9 {3: 2}
+i = 10 {2: 1, 5: 1}
+'''
 print smallestMultiple(10)
+# 2520
 print smallestMultiple(20)
+# 232792560
